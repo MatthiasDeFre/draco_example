@@ -30,6 +30,18 @@ On Linux you can just run following command:
 sudo apt install libpcl-dev
 ```
 
+## Building the application
+```
+mkdir build && cd build
+cmake -B . -S ..
+```
+On Windows this will generate a Visual Studio solution which you should then build (make sure to also select the Release candiate here)
+
+On Linux you just need to run following commands:
+```
+cmake --build .
+```
+
 ## Application CMD options
 
 | **Parameter** | **Name**    | **Description**                                                       | **Example**   |
