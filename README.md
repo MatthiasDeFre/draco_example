@@ -2,7 +2,7 @@
 This repository contains a small example application to encode/decode a supplied .ply file. There are two options to read to read the .ply file, either directly with draco or by using PCL.
 The PCL example is meant to give an idea on how to convert existing formats (PCL point clouds or depth/color frames) into a draco compatible point cloud. 
 
-There is also an example .ply file located in the frames directory which you can use to see if the application works correctly.
+There is also an example .ply file located in the frames directory which you can use to see if the application works correctly. Currently the application only supports RGB point clouds (without the alpha channel). However, implementing support for this would be fairly trivial (i.e. increasing the number of color components in draco to 4).
 
 ## Dependencies
 The application relies on two dependencies [Draco](https://github.com/google/draco) and [Point Cloud Library (PCL)](https://github.com/PointCloudLibrary/pcl). 
