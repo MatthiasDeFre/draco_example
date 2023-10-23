@@ -37,7 +37,10 @@ sudo apt install libpcl-dev
 mkdir build && cd build
 cmake -B . -S ..
 ```
-On Windows this will generate a Visual Studio solution which you should then build (make sure to also select the Release candiate here)
+On Windows this will generate a Visual Studio solution which you can either build by opening (make sure to also select the Release candiate here) or by using the following command:
+```
+cmake --build .
+```
 
 On Linux you just need to run following commands:
 ```
